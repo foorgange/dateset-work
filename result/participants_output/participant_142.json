@@ -1,0 +1,209 @@
+{
+  "patient_info": {
+    "AGE": 37,
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute dystonic reactions', 0.16641669235597092], ['Myasthenia gravis', 0.13318652215709495], ['Pulmonary embolism', 0.10600997588786586], ['Acute pulmonary edema', 0.09929998221249416], ['Guillain-Barré syndrome', 0.09076596792353152], ['Atrial fibrillation', 0.08669791277301812], ['Myocarditis', 0.0856202177380797], ['Anemia', 0.0639183367958058], ['Anaphylaxis', 0.0639183367958058], ['Scombroid food poisoning', 0.04043199518120366], ['PSVT', 0.03414292139720394], ['SLE', 0.029591138781925458]]",
+    "SEX": "M",
+    "PATHOLOGY": "Acute dystonic reactions",
+    "EVIDENCES": "['E_15', 'E_62', 'E_66', 'E_128', 'E_168', 'E_172', 'E_180', 'E_192', 'E_204_@_V_4', 'E_205']",
+    "INITIAL_EVIDENCE": "E_180"
+  },
+  "evidence_details": [
+    {
+      "name": "E_15",
+      "code_question": "E_15",
+      "question_fr": "Avez-vous pris ou commencer un antipsychotique dans les derniers 7 jours?",
+      "question_en": "Have you started or taken any antipsychotic medication within the last 7 days?",
+      "is_antecedent": true,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_62",
+      "code_question": "E_62",
+      "question_fr": "Prenez-vous régulièrement des substances illicites stimulantes?",
+      "question_en": "Do you regularly take stimulant drugs?",
+      "is_antecedent": true,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_66",
+      "code_question": "E_66",
+      "question_fr": "Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?",
+      "question_en": "Are you experiencing shortness of breath or difficulty breathing in a significant way?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_128",
+      "code_question": "E_128",
+      "question_fr": "Avez-vous eu l’impression que vous étouffiez pendant un court instant et que vous étiez incapable de respirer ou parler?",
+      "question_en": "Have you ever felt like you were suffocating for a very short time associated with inability to breathe or speak?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_168",
+      "code_question": "E_168",
+      "question_fr": "Avez-vous de la difficulté à garder votre langue dans votre bouche?",
+      "question_en": "Do you have trouble keeping your tongue in your mouth?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_172",
+      "code_question": "E_172",
+      "question_fr": "Avez-vous de la misère à ouvrir/relever une ou les deux paupières?",
+      "question_en": "Do you have a hard time opening/raising one or both eyelids?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_180",
+      "code_question": "E_180",
+      "question_fr": "Êtes-vous incapable de contrôler la direction de votre regard?",
+      "question_en": "Are you unable to control the direction of your eyes?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_192",
+      "code_question": "E_192",
+      "question_fr": "Avez-vous l’impression qu’il y a des muscles spasmés ou endoloris, dans votre cou, qui vous empêchent de tourner votre tête d’un bord ou de l’autre?",
+      "question_en": "Do you feel that muscle spasms or soreness in your neck are keeping you from turning your head to one side?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_204",
+      "code_question": "E_204",
+      "question_fr": "Avez-vous voyagé dans les 4 dernières semaines?",
+      "question_en": "Have you traveled out of the country in the last 4 weeks?",
+      "is_antecedent": true,
+      "default_value": "V_10",
+      "possible-values": [
+        "V_10",
+        "V_0",
+        "V_1",
+        "V_2",
+        "V_3",
+        "V_4",
+        "V_5",
+        "V_6",
+        "V_7",
+        "V_8",
+        "V_9",
+        "V_13"
+      ],
+      "value_meaning": {
+        "V_10": {
+          "fr": "N",
+          "en": "N"
+        },
+        "V_0": {
+          "fr": "Afrique du Nord",
+          "en": "North Africa"
+        },
+        "V_1": {
+          "fr": "Afrique de l'Ouest",
+          "en": "West Africa"
+        },
+        "V_2": {
+          "fr": "Afrique du Sud",
+          "en": "South Africa"
+        },
+        "V_3": {
+          "fr": "Amérique Centrale",
+          "en": "Central America"
+        },
+        "V_4": {
+          "fr": "Amérique du Nord",
+          "en": "North America"
+        },
+        "V_5": {
+          "fr": "Amérique du Sud",
+          "en": "South America"
+        },
+        "V_6": {
+          "fr": "Asie",
+          "en": "Asia"
+        },
+        "V_7": {
+          "fr": "Asie Sud-Sud-Est",
+          "en": "South East Asia"
+        },
+        "V_8": {
+          "fr": "Caraibes",
+          "en": "Caraibes"
+        },
+        "V_9": {
+          "fr": "Europe",
+          "en": "Europe"
+        },
+        "V_13": {
+          "fr": "Océeanie",
+          "en": "Oceania"
+        }
+      },
+      "data_type": "C"
+    },
+    {
+      "name": "E_205",
+      "code_question": "E_205",
+      "question_fr": "Avez-vous soudainement de la difficulté ou une incapacité à ouvrir la bouche ou même de la douleur au niveau de la mâchoire lors de l’ouverture de celle-ci?",
+      "question_en": "Do you suddenly have difficulty or an inability to open your mouth or have jaw pain when opening it?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    }
+  ],
+  "condition_details": [
+    {
+      "condition_name": "Acute dystonic reactions",
+      "cond-name-fr": "Réaction dystonique aïgue",
+      "cond-name-eng": "Acute dystonic reactions",
+      "icd10-id": "G24.02",
+      "symptoms": {
+        "E_128": {},
+        "E_193": {},
+        "E_205": {},
+        "E_192": {},
+        "E_168": {},
+        "E_66": {},
+        "E_172": {},
+        "E_180": {}
+      },
+      "antecedents": {
+        "E_62": {},
+        "E_15": {},
+        "E_147": {},
+        "E_204": {}
+      },
+      "severity": 2
+    }
+  ]
+}

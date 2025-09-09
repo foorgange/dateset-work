@@ -1,0 +1,127 @@
+{
+  "patient_info": {
+    "AGE": 59,
+    "DIFFERENTIAL_DIAGNOSIS": "[['Larygospasm', 1.0]]",
+    "SEX": "M",
+    "PATHOLOGY": "Larygospasm",
+    "EVIDENCES": "['E_79', 'E_194', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_194"
+  },
+  "evidence_details": [
+    {
+      "name": "E_79",
+      "code_question": "E_79",
+      "question_fr": "Fumez-vous la cigarette quotidiennement?",
+      "question_en": "Do you smoke cigarettes?",
+      "is_antecedent": true,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_194",
+      "code_question": "E_194",
+      "question_fr": "Avez-vous noté un bruit respiratoire aigu surtout à l’inspiration?",
+      "question_en": "Have you noticed a high pitched sound when breathing in?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_204",
+      "code_question": "E_204",
+      "question_fr": "Avez-vous voyagé dans les 4 dernières semaines?",
+      "question_en": "Have you traveled out of the country in the last 4 weeks?",
+      "is_antecedent": true,
+      "default_value": "V_10",
+      "possible-values": [
+        "V_10",
+        "V_0",
+        "V_1",
+        "V_2",
+        "V_3",
+        "V_4",
+        "V_5",
+        "V_6",
+        "V_7",
+        "V_8",
+        "V_9",
+        "V_13"
+      ],
+      "value_meaning": {
+        "V_10": {
+          "fr": "N",
+          "en": "N"
+        },
+        "V_0": {
+          "fr": "Afrique du Nord",
+          "en": "North Africa"
+        },
+        "V_1": {
+          "fr": "Afrique de l'Ouest",
+          "en": "West Africa"
+        },
+        "V_2": {
+          "fr": "Afrique du Sud",
+          "en": "South Africa"
+        },
+        "V_3": {
+          "fr": "Amérique Centrale",
+          "en": "Central America"
+        },
+        "V_4": {
+          "fr": "Amérique du Nord",
+          "en": "North America"
+        },
+        "V_5": {
+          "fr": "Amérique du Sud",
+          "en": "South America"
+        },
+        "V_6": {
+          "fr": "Asie",
+          "en": "Asia"
+        },
+        "V_7": {
+          "fr": "Asie Sud-Sud-Est",
+          "en": "South East Asia"
+        },
+        "V_8": {
+          "fr": "Caraibes",
+          "en": "Caraibes"
+        },
+        "V_9": {
+          "fr": "Europe",
+          "en": "Europe"
+        },
+        "V_13": {
+          "fr": "Océeanie",
+          "en": "Oceania"
+        }
+      },
+      "data_type": "C"
+    }
+  ],
+  "condition_details": [
+    {
+      "condition_name": "Larygospasm",
+      "cond-name-fr": "Laryngospasme",
+      "cond-name-eng": "Larygospasm",
+      "icd10-id": "J38.5",
+      "symptoms": {
+        "E_194": {}
+      },
+      "antecedents": {
+        "E_124": {},
+        "E_116": {},
+        "E_79": {},
+        "E_222": {},
+        "E_125": {},
+        "E_204": {}
+      },
+      "severity": 1
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "patient_info": {
+    "AGE": 30,
+    "DIFFERENTIAL_DIAGNOSIS": "[['PSVT', 0.36355392493051925], ['Atrial fibrillation', 0.35727940717237566], ['Anemia', 0.18196655263884853], ['Scombroid food poisoning', 0.09720011525825648]]",
+    "SEX": "M",
+    "PATHOLOGY": "Atrial fibrillation",
+    "EVIDENCES": "['E_19', 'E_31', 'E_69', 'E_76', 'E_155', 'E_164', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_164"
+  },
+  "evidence_details": [
+    {
+      "name": "E_19",
+      "code_question": "E_19",
+      "question_fr": "Êtes-vous connu pour de l’hyperthyroïdie?",
+      "question_en": "Have you been diagnosed with hyperthyroidism?",
+      "is_antecedent": true,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_31",
+      "code_question": "E_31",
+      "question_fr": "Êtes-vous considéré comme une personne ayant une maladie pulmonaire obstructive chronique sévère?",
+      "question_en": "Do you have severe Chronic Obstructive Pulmonary Disease (COPD)?",
+      "is_antecedent": true,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_69",
+      "code_question": "E_68",
+      "question_fr": "Souffrez-vous de diabète?",
+      "question_en": "Do you have diabetes?",
+      "is_antecedent": true,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_76",
+      "code_question": "E_76",
+      "question_fr": "Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?",
+      "question_en": "Do you feel slightly dizzy or lightheaded?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_155",
+      "code_question": "E_155",
+      "question_fr": "Avez-vous l’impression que votre coeur bat vite, de façon irrégulière ou ressentez-vous des palpitations?",
+      "question_en": "Do you feel your heart is beating fast (racing), irregularly (missing a beat) or do you feel palpitations?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_164",
+      "code_question": "E_164",
+      "question_fr": "Sentez-vous que votre cœur bat de façon très irrégulière ou désorganisée?",
+      "question_en": "Do you feel your heart is beating very irregularly or in a disorganized pattern?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_204",
+      "code_question": "E_204",
+      "question_fr": "Avez-vous voyagé dans les 4 dernières semaines?",
+      "question_en": "Have you traveled out of the country in the last 4 weeks?",
+      "is_antecedent": true,
+      "default_value": "V_10",
+      "possible-values": [
+        "V_10",
+        "V_0",
+        "V_1",
+        "V_2",
+        "V_3",
+        "V_4",
+        "V_5",
+        "V_6",
+        "V_7",
+        "V_8",
+        "V_9",
+        "V_13"
+      ],
+      "value_meaning": {
+        "V_10": {
+          "fr": "N",
+          "en": "N"
+        },
+        "V_0": {
+          "fr": "Afrique du Nord",
+          "en": "North Africa"
+        },
+        "V_1": {
+          "fr": "Afrique de l'Ouest",
+          "en": "West Africa"
+        },
+        "V_2": {
+          "fr": "Afrique du Sud",
+          "en": "South Africa"
+        },
+        "V_3": {
+          "fr": "Amérique Centrale",
+          "en": "Central America"
+        },
+        "V_4": {
+          "fr": "Amérique du Nord",
+          "en": "North America"
+        },
+        "V_5": {
+          "fr": "Amérique du Sud",
+          "en": "South America"
+        },
+        "V_6": {
+          "fr": "Asie",
+          "en": "Asia"
+        },
+        "V_7": {
+          "fr": "Asie Sud-Sud-Est",
+          "en": "South East Asia"
+        },
+        "V_8": {
+          "fr": "Caraibes",
+          "en": "Caraibes"
+        },
+        "V_9": {
+          "fr": "Europe",
+          "en": "Europe"
+        },
+        "V_13": {
+          "fr": "Océeanie",
+          "en": "Oceania"
+        }
+      },
+      "data_type": "C"
+    }
+  ],
+  "condition_details": [
+    {
+      "condition_name": "Atrial fibrillation",
+      "cond-name-fr": "Fibrillation auriculaire/Flutter auriculaire",
+      "cond-name-eng": "Atrial fibrillation",
+      "icd10-id": "I48.91",
+      "symptoms": {
+        "E_155": {},
+        "E_66": {},
+        "E_76": {},
+        "E_218": {},
+        "E_164": {}
+      },
+      "antecedents": {
+        "E_139": {},
+        "E_19": {},
+        "E_104": {},
+        "E_105": {},
+        "E_69": {},
+        "E_31": {},
+        "E_70": {},
+        "E_22": {},
+        "E_204": {}
+      },
+      "severity": 3
+    }
+  ]
+}

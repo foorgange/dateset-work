@@ -1,0 +1,199 @@
+{
+  "patient_info": {
+    "AGE": 43,
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute COPD exacerbation / infection', 0.1244213435480098], ['Bronchitis', 0.11632363163469966], ['Bronchiectasis', 0.10722603647824498], ['Pneumonia', 0.10440123403202255], ['Pulmonary neoplasm', 0.09557986268881986], ['Guillain-Barré syndrome', 0.061660785224130904], ['Atrial fibrillation', 0.05889720014203215], ['Myocarditis', 0.058165080784891215], ['Pulmonary embolism', 0.052245886770235596], ['Acute dystonic reactions', 0.043422165016410906], ['Myasthenia gravis', 0.043422165016410906], ['Anemia', 0.043422165016410906], ['Tuberculosis', 0.041479860265274254], ['PSVT', 0.023194589242644673], ['Possible NSTEMI / STEMI', 0.01306899706988093], ['Chagas', 0.01306899706988093]]",
+    "SEX": "M",
+    "PATHOLOGY": "Acute COPD exacerbation / infection",
+    "EVIDENCES": "['E_66', 'E_72', 'E_77', 'E_123', 'E_125', 'E_198', 'E_199', 'E_204_@_V_10', 'E_214']",
+    "INITIAL_EVIDENCE": "E_77"
+  },
+  "evidence_details": [
+    {
+      "name": "E_66",
+      "code_question": "E_66",
+      "question_fr": "Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?",
+      "question_en": "Are you experiencing shortness of breath or difficulty breathing in a significant way?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_72",
+      "code_question": "E_72",
+      "question_fr": "Avez-vous eu une ou des épisodes d’aggravation ou de détérioration de votre maladie pulmonaire obstructive chronique dans la dernière année?",
+      "question_en": "Have you had one or several flare ups of chronic obstructive pulmonary disease (COPD) in the past year?",
+      "is_antecedent": true,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_77",
+      "code_question": "E_77",
+      "question_fr": "Avez-vous une toux produisant des crachats colorés ou plus abondants qu’habituellement?",
+      "question_en": "Do you have a cough that produces colored or more abundant sputum than usual?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_123",
+      "code_question": "E_122",
+      "question_fr": "Souffrez-vous de maladie pulmonaire obstructive chronique?",
+      "question_en": "Do you have a chronic obstructive pulmonary disease (COPD)?",
+      "is_antecedent": true,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_125",
+      "code_question": "E_125",
+      "question_fr": "Avez-vous déjà reçu un diagnostic de reflux gastro-oesophagien?",
+      "question_en": "Have you ever been diagnosed with gastroesophageal reflux?",
+      "is_antecedent": true,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_198",
+      "code_question": "E_198",
+      "question_fr": "Travaillez-vous dans le domaine de l’agriculture?",
+      "question_en": "Do you work in agriculture?",
+      "is_antecedent": true,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_199",
+      "code_question": "E_199",
+      "question_fr": "Travaillez-vous dans le domaine de la construction?",
+      "question_en": "Do you work in construction?",
+      "is_antecedent": true,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_204",
+      "code_question": "E_204",
+      "question_fr": "Avez-vous voyagé dans les 4 dernières semaines?",
+      "question_en": "Have you traveled out of the country in the last 4 weeks?",
+      "is_antecedent": true,
+      "default_value": "V_10",
+      "possible-values": [
+        "V_10",
+        "V_0",
+        "V_1",
+        "V_2",
+        "V_3",
+        "V_4",
+        "V_5",
+        "V_6",
+        "V_7",
+        "V_8",
+        "V_9",
+        "V_13"
+      ],
+      "value_meaning": {
+        "V_10": {
+          "fr": "N",
+          "en": "N"
+        },
+        "V_0": {
+          "fr": "Afrique du Nord",
+          "en": "North Africa"
+        },
+        "V_1": {
+          "fr": "Afrique de l'Ouest",
+          "en": "West Africa"
+        },
+        "V_2": {
+          "fr": "Afrique du Sud",
+          "en": "South Africa"
+        },
+        "V_3": {
+          "fr": "Amérique Centrale",
+          "en": "Central America"
+        },
+        "V_4": {
+          "fr": "Amérique du Nord",
+          "en": "North America"
+        },
+        "V_5": {
+          "fr": "Amérique du Sud",
+          "en": "South America"
+        },
+        "V_6": {
+          "fr": "Asie",
+          "en": "Asia"
+        },
+        "V_7": {
+          "fr": "Asie Sud-Sud-Est",
+          "en": "South East Asia"
+        },
+        "V_8": {
+          "fr": "Caraibes",
+          "en": "Caraibes"
+        },
+        "V_9": {
+          "fr": "Europe",
+          "en": "Europe"
+        },
+        "V_13": {
+          "fr": "Océeanie",
+          "en": "Oceania"
+        }
+      },
+      "data_type": "C"
+    },
+    {
+      "name": "E_214",
+      "code_question": "E_214",
+      "question_fr": "Avez-vous noté un un son aigu lorsque vous sortez l’air de vos poumons?",
+      "question_en": "Have you noticed a wheezing sound when you exhale?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    }
+  ],
+  "condition_details": [
+    {
+      "condition_name": "Acute COPD exacerbation / infection",
+      "cond-name-fr": "Exacerbation aigue de MPOC et/ou surinfection associée",
+      "cond-name-eng": "Acute COPD exacerbation / infection",
+      "icd10-id": "j44.1",
+      "symptoms": {
+        "E_201": {},
+        "E_214": {},
+        "E_77": {},
+        "E_66": {}
+      },
+      "antecedents": {
+        "E_125": {},
+        "E_79": {},
+        "E_123": {},
+        "E_72": {},
+        "E_198": {},
+        "E_200": {},
+        "E_199": {},
+        "E_31": {},
+        "E_204": {}
+      },
+      "severity": 3
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "patient_info": {
+    "AGE": 27,
+    "DIFFERENTIAL_DIAGNOSIS": "[['Myasthenia gravis', 0.16203855614673643], ['Guillain-Barré syndrome', 0.15926213763415473], ['Pulmonary embolism', 0.14542104315509222], ['Myocarditis', 0.13993485404646544], ['Acute pulmonary edema', 0.1362164916809105], ['Anaphylaxis', 0.08768109921481954], ['Chagas', 0.07339035635397669], ['Scombroid food poisoning', 0.05546329830611062], ['SLE', 0.04059216346173375]]",
+    "SEX": "F",
+    "PATHOLOGY": "Myasthenia gravis",
+    "EVIDENCES": "['E_28', 'E_52', 'E_66', 'E_84', 'E_90', 'E_172', 'E_176', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_52"
+  },
+  "evidence_details": [
+    {
+      "name": "E_28",
+      "code_question": "E_28",
+      "question_fr": "Avez-vous des membres de votre famille qui ont la myasthénie grave?",
+      "question_en": "Are there any members of your family who have been diagnosed myasthenia gravis?",
+      "is_antecedent": true,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_52",
+      "code_question": "E_52",
+      "question_fr": "Avez-vous l’impression de voir double ou de voir simultanément 2 images semblables?",
+      "question_en": "Do you have the perception of seeing two images of a single object seen overlapping or adjacent to each other (double vision)?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_66",
+      "code_question": "E_66",
+      "question_fr": "Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?",
+      "question_en": "Are you experiencing shortness of breath or difficulty breathing in a significant way?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_84",
+      "code_question": "E_84",
+      "question_fr": "Avez-vous présentement une faiblesse des 2 bras et/ou des 2 jambes?",
+      "question_en": "Do you feel weakness in both arms and/or both legs?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_90",
+      "code_question": "E_90",
+      "question_fr": "Est-ce que vos symptômes de faiblesse musculaire augmente avec la fatigue et/ou le stress?",
+      "question_en": "Do your symptoms of muscle weakness increase with fatigue and/or stress?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_172",
+      "code_question": "E_172",
+      "question_fr": "Avez-vous de la misère à ouvrir/relever une ou les deux paupières?",
+      "question_en": "Do you have a hard time opening/raising one or both eyelids?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_176",
+      "code_question": "E_176",
+      "question_fr": "Avez-vous noté une faiblesse ou paralysie d’un ou plusieurs de vos membres ou au niveau du visage, encore présentes ou résolues?",
+      "question_en": "Did you previously, or do you currently, have any weakness/paralysis in one or more of your limbs or in your face?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_204",
+      "code_question": "E_204",
+      "question_fr": "Avez-vous voyagé dans les 4 dernières semaines?",
+      "question_en": "Have you traveled out of the country in the last 4 weeks?",
+      "is_antecedent": true,
+      "default_value": "V_10",
+      "possible-values": [
+        "V_10",
+        "V_0",
+        "V_1",
+        "V_2",
+        "V_3",
+        "V_4",
+        "V_5",
+        "V_6",
+        "V_7",
+        "V_8",
+        "V_9",
+        "V_13"
+      ],
+      "value_meaning": {
+        "V_10": {
+          "fr": "N",
+          "en": "N"
+        },
+        "V_0": {
+          "fr": "Afrique du Nord",
+          "en": "North Africa"
+        },
+        "V_1": {
+          "fr": "Afrique de l'Ouest",
+          "en": "West Africa"
+        },
+        "V_2": {
+          "fr": "Afrique du Sud",
+          "en": "South Africa"
+        },
+        "V_3": {
+          "fr": "Amérique Centrale",
+          "en": "Central America"
+        },
+        "V_4": {
+          "fr": "Amérique du Nord",
+          "en": "North America"
+        },
+        "V_5": {
+          "fr": "Amérique du Sud",
+          "en": "South America"
+        },
+        "V_6": {
+          "fr": "Asie",
+          "en": "Asia"
+        },
+        "V_7": {
+          "fr": "Asie Sud-Sud-Est",
+          "en": "South East Asia"
+        },
+        "V_8": {
+          "fr": "Caraibes",
+          "en": "Caraibes"
+        },
+        "V_9": {
+          "fr": "Europe",
+          "en": "Europe"
+        },
+        "V_13": {
+          "fr": "Océeanie",
+          "en": "Oceania"
+        }
+      },
+      "data_type": "C"
+    }
+  ],
+  "condition_details": [
+    {
+      "condition_name": "Myasthenia gravis",
+      "cond-name-fr": "Myasthénie grave",
+      "cond-name-eng": "Myasthenia gravis",
+      "icd10-id": "G70.0",
+      "symptoms": {
+        "E_65": {},
+        "E_63": {},
+        "E_52": {},
+        "E_172": {},
+        "E_84": {},
+        "E_66": {},
+        "E_90": {},
+        "E_38": {},
+        "E_176": {}
+      },
+      "antecedents": {
+        "E_28": {},
+        "E_204": {}
+      },
+      "severity": 3
+    }
+  ]
+}

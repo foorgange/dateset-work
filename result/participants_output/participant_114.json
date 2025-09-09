@@ -1,0 +1,154 @@
+{
+  "patient_info": {
+    "AGE": 57,
+    "DIFFERENTIAL_DIAGNOSIS": "[['Pulmonary neoplasm', 0.13789190222508743], ['Bronchitis', 0.13363302645881822], ['Pulmonary embolism', 0.09659952186768161], ['Acute pulmonary edema', 0.09048517106864264], ['Guillain-Barré syndrome', 0.08270871707908832], ['Bronchospasm / acute asthma exacerbation', 0.08026275015009895], ['Atrial fibrillation', 0.07900178120649999], ['Tuberculosis', 0.07663385584774031], ['Acute dystonic reactions', 0.0582443371139284], ['Myocarditis', 0.0582443371139284], ['Anaphylaxis', 0.0582443371139284], ['Pneumonia', 0.04805026275455746]]",
+    "SEX": "M",
+    "PATHOLOGY": "Tuberculosis",
+    "EVIDENCES": "['E_66', 'E_69', 'E_162', 'E_201', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_201"
+  },
+  "evidence_details": [
+    {
+      "name": "E_66",
+      "code_question": "E_66",
+      "question_fr": "Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?",
+      "question_en": "Are you experiencing shortness of breath or difficulty breathing in a significant way?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_69",
+      "code_question": "E_68",
+      "question_fr": "Souffrez-vous de diabète?",
+      "question_en": "Do you have diabetes?",
+      "is_antecedent": true,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_162",
+      "code_question": "E_162",
+      "question_fr": "Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?",
+      "question_en": "Have you had an involuntary weight loss over the last 3 months?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_201",
+      "code_question": "E_201",
+      "question_fr": "Avez-vous de la toux?",
+      "question_en": "Do you have a cough?",
+      "is_antecedent": false,
+      "default_value": 0,
+      "value_meaning": {},
+      "possible-values": [],
+      "data_type": "B"
+    },
+    {
+      "name": "E_204",
+      "code_question": "E_204",
+      "question_fr": "Avez-vous voyagé dans les 4 dernières semaines?",
+      "question_en": "Have you traveled out of the country in the last 4 weeks?",
+      "is_antecedent": true,
+      "default_value": "V_10",
+      "possible-values": [
+        "V_10",
+        "V_0",
+        "V_1",
+        "V_2",
+        "V_3",
+        "V_4",
+        "V_5",
+        "V_6",
+        "V_7",
+        "V_8",
+        "V_9",
+        "V_13"
+      ],
+      "value_meaning": {
+        "V_10": {
+          "fr": "N",
+          "en": "N"
+        },
+        "V_0": {
+          "fr": "Afrique du Nord",
+          "en": "North Africa"
+        },
+        "V_1": {
+          "fr": "Afrique de l'Ouest",
+          "en": "West Africa"
+        },
+        "V_2": {
+          "fr": "Afrique du Sud",
+          "en": "South Africa"
+        },
+        "V_3": {
+          "fr": "Amérique Centrale",
+          "en": "Central America"
+        },
+        "V_4": {
+          "fr": "Amérique du Nord",
+          "en": "North America"
+        },
+        "V_5": {
+          "fr": "Amérique du Sud",
+          "en": "South America"
+        },
+        "V_6": {
+          "fr": "Asie",
+          "en": "Asia"
+        },
+        "V_7": {
+          "fr": "Asie Sud-Sud-Est",
+          "en": "South East Asia"
+        },
+        "V_8": {
+          "fr": "Caraibes",
+          "en": "Caraibes"
+        },
+        "V_9": {
+          "fr": "Europe",
+          "en": "Europe"
+        },
+        "V_13": {
+          "fr": "Océeanie",
+          "en": "Oceania"
+        }
+      },
+      "data_type": "C"
+    }
+  ],
+  "condition_details": [
+    {
+      "condition_name": "Tuberculosis",
+      "cond-name-fr": "Tuberculose",
+      "cond-name-eng": "Tuberculosis",
+      "icd10-id": "a15",
+      "symptoms": {
+        "E_201": {},
+        "E_45": {},
+        "E_66": {},
+        "E_91": {},
+        "E_162": {}
+      },
+      "antecedents": {
+        "E_78": {},
+        "E_61": {},
+        "E_2": {},
+        "E_44": {},
+        "E_69": {},
+        "E_208": {},
+        "E_204": {}
+      },
+      "severity": 3
+    }
+  ]
+}
